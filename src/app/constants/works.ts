@@ -12,7 +12,7 @@ code:"https://github.com/aermilina/example-react-amp"
 },
 {name: "ZR.RU",
 image:"/zrru.svg",
-technology:["React.js","SSR","Redux","Typescript","Styled-components"],
+technology:["Next.js","SSG","SSR","React.js","Typescript","Styled-components"],
 siteLink:"https://www.zr.ru"
 },
 {name: "Little lemon. Exam Coursera project",
