@@ -27,7 +27,7 @@ export default function Projects(){
                                 </h3>
                                 <div className="absolute bottom-10 left-10 md:static md:self-end">
                                     <ul className="list-disc">
-                                    {technology.map((item)=>{
+                                    {technology && technology.map((item)=>{
                                         return(
                                             <li className="text-white text-m font-bold">{item}</li>
                                         )
