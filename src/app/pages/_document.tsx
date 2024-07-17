@@ -18,12 +18,13 @@ export default function Document() {
     
   return (
     <Html lang="en">
-      <Head/>      
+      <Head>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-N09K7RP38L" />
+      <Script strategy="afterInteractive" dangerouslySetInnerHTML={{__html:google}}/>
+        </Head>      
       <body>
         <Main />
         <NextScript />
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-N09K7RP38L" />
-        <Script strategy="afterInteractive" dangerouslySetInnerHTML={{__html:google}}/>
       </body>
     </Html>
   )

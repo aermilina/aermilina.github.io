@@ -1,4 +1,9 @@
 export const works=[
+    {name: "Test Case for Realmond",
+    image:"/testrealmond.svg",
+    techology:["Next.js","React","Typescript","Tailwind Css"],
+    code: "https://github.com/aermilina/userlist_realmond"
+    },
     {name: "Portfolio site",
      description:"This is my portfolio site",
     image:"/portfolio.svg",
