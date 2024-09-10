@@ -1,12 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import type { Metadata } from "next";
 import Script from "next/script";
-
-export const metadata: Metadata = {
-  title: "Anna Ermilina - Frontend developer",
-        description: "I've been developing websites for 4+ years. Get in Touch!",
-        icons:"/avatar.jpg",
-};
 
 
 export default function Document() {
@@ -19,6 +12,12 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <title>Anna Ermilina - Frontend developer</title>
+        <meta name="description" content="I have been developing websites for 4+ years. Get in Touch!"/>
+        <meta name="og:title" content="Anna Ermilina - Frontend developer"/>
+        <meta name="og:type" content="website"/>
+        <meta name="og:description" content="I have been developing websites for 4+ years. Get in Touch!"/>
+        <meta name="og:url" content="https://aermilina.github.io/"/>
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-N09K7RP38L" />
       <Script strategy="afterInteractive" dangerouslySetInnerHTML={{__html:google}}/>
         </Head>      
