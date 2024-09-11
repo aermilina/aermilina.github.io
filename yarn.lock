@@ -152,6 +152,13 @@
   "resolved" "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-14.2.9.tgz"
   "version" "14.2.9"
 
+"@next/third-parties@^14.2.9":
+  "integrity" "sha512-fPXe0lZkaMzDucGH+GSwQND/ffvsq7yuBsmLcTiJgj4IIyRUDmB+GshYczk+04w0s/9nTbzuQHDSJNFn03FU9g=="
+  "resolved" "https://registry.npmjs.org/@next/third-parties/-/third-parties-14.2.9.tgz"
+  "version" "14.2.9"
+  dependencies:
+    "third-party-capital" "1.0.20"
+
 "@nodelib/fs.scandir@2.1.5":
   "integrity" "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="
   "resolved" "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
@@ -1882,7 +1889,7 @@
   "resolved" "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   "version" "1.4.0"
 
-"next@^14.2.4":
+"next@^13.0.0 || ^14.0.0", "next@^14.2.9":
   "integrity" "sha512-3CzBNo6BuJnRjcQvRw+irnU1WiuJNZEp+dkzkt91y4jeIDN/Emg95F+takSYiLpJ/HkxClVQRyqiTwYce5IVqw=="
   "resolved" "https://registry.npmjs.org/next/-/next-14.2.9.tgz"
   "version" "14.2.9"
@@ -2610,6 +2617,11 @@
   "version" "3.3.1"
   dependencies:
     "any-promise" "^1.0.0"
+
+"third-party-capital@1.0.20":
+  "integrity" "sha512-oB7yIimd8SuGptespDAZnNkzIz+NWaJCu2RMsbs4Wmp9zSDUM8Nhi3s2OOcqYuv3mN4hitXc8DVx+LyUmbUDiA=="
+  "resolved" "https://registry.npmjs.org/third-party-capital/-/third-party-capital-1.0.20.tgz"
+  "version" "1.0.20"
 
 "to-regex-range@^5.0.1":
   "integrity" "sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ=="
