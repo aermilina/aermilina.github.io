@@ -1,4 +1,9 @@
 export const works=[
+    {name:"Statistics interface",
+        image:"/kpproject.svg",
+        technology:["Next.js","Typescript","Axios","Formik","Yup","Material UI"],
+        code: "https://github.com/aermilina/statsboard_example"
+    },
     {name: "Test Case for Realmond",
     image:"/testrealmond.svg",
     technology:["Next.js","React","Typescript","Tailwind Css"],
