@@ -1,5 +1,5 @@
 export const works=[
-    {name:"Statistics interface",
+    {name:"Statistics interface for KP-IT",
         image:"/kpproject.svg",
         technology:["Next.js","Typescript","Axios","Formik","Yup","Material UI"],
         code: "https://github.com/aermilina/statsboard_example"
