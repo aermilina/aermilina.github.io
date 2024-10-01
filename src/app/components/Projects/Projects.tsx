@@ -22,7 +22,7 @@ export default function Projects(){
                                     alt="portfolio"
                                     className=" object-cover opacity-50 md:h-60 md:mr-14 md:opacity-90"
                                 />
-                                <h3 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 px-2">
+                                <h3 className="absolute top-4 text-gray-50 font-bold text-xl bg-red-500 px-2">
                                     {name}
                                 </h3>
                                 <div className="absolute bottom-10 left-10 md:static md:self-end">

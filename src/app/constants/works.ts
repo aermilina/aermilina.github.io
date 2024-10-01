@@ -1,4 +1,10 @@
 export const works=[
+    {name: "Test Case for INMYROOMS",
+        image: "/inmyrooms.svg",
+        technology:["React", "Typescript", "Scss"],
+        code:"https://github.com/aermilina/tapbar_inmyrooms",
+        siteLink:"https://aermilina.github.io/tapbar_inmyrooms/"
+    },
     {name:"Statistics interface for KP-IT",
         image:"/kpproject.svg",
         technology:["Next.js","Typescript","Axios","Formik","Yup","Material UI"],
