@@ -1,4 +1,10 @@
 export const works=[
+    {name: "Test Case for CADExachange",
+        image: "/cadex.svg",
+        technology:["Next.js","React","Typescript","Next API Router","Material UI","Styled-components"],
+        code:"https://github.com/aermilina/testcase-cadex",
+        siteLink:"https://testcase-cadex-2.vercel.app/"
+    },
     {name: "Test Case for INMYROOMS",
         image: "/inmyrooms.svg",
         technology:["React", "Typescript", "Scss"],
