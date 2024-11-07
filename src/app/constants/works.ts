@@ -1,5 +1,5 @@
 export const works=[
-    {name: "Test Case for CADExachange",
+    {name: "Test Case for CADExchange",
         image: "/cadex.svg",
         technology:["Next.js","React","Typescript","Next API Router","Formik","Yup","Material UI","Styled-components"],
         code:"https://github.com/aermilina/testcase-cadex",
