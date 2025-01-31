@@ -1,6 +1,6 @@
 export const works=[
-    {name:'Frontend jobs TG bot',
-    image:'/frontjobs.svg',
+    {name:"Frontend jobs TG bot",
+    image:"/frontjobs.svg",
     technology:["Python","Telegram bot API","AI"],
     code:"https://github.com/aermilina/frontjobs",
     siteLink:"https://t.me/FrontendinRemote"
