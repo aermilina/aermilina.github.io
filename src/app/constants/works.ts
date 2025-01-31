@@ -1,5 +1,23 @@
 export const works=[
-    {name:"Statistics interface",
+    {name:'Frontend jobs TG bot',
+    image:'/frontjobs.svg',
+    technology:["Python","Telegram bot API","AI"],
+    code:"https://github.com/aermilina/frontjobs",
+    siteLink:"https://t.me/FrontendinRemote"
+    },
+    {name: "Test Case for CADExachange",
+        image: "/cadex.svg",
+        technology:["Next.js","React","Typescript","Next API Router","Formik","Yup","Material UI","Styled-components"],
+        code:"https://github.com/aermilina/testcase-cadex",
+        siteLink:"https://testcase-cadex-2.vercel.app/"
+    },
+    {name: "Test Case for INMYROOMS",
+        image: "/inmyrooms.svg",
+        technology:["React", "Typescript", "Scss"],
+        code:"https://github.com/aermilina/tapbar_inmyrooms",
+        siteLink:"https://aermilina.github.io/tapbar_inmyrooms/"
+    },
+    {name:"Statistics interface for KP-IT",
         image:"/kpproject.svg",
         technology:["Next.js","Typescript","Axios","Formik","Yup","Material UI"],
         code: "https://github.com/aermilina/statsboard_example"
