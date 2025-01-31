@@ -1,4 +1,10 @@
-export const works=[
+export const works=[{
+    name:"Frontend Jobs TG Bot",
+    image:"/frontjobs.svg",
+    technology:["Python","Telegram Bot API","AI"],
+    code:"https://github.com/aermilina/frontjobs",
+    siteLink:"https://t.me/FrontendinRemote"
+},
     {name: "Test Case for CADExachange",
         image: "/cadex.svg",
         technology:["Next.js","React","Typescript","Next API Router","Formik","Yup","Material UI","Styled-components"],
