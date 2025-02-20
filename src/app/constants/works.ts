@@ -42,9 +42,5 @@ code:"https://github.com/aermilina/example-react-amp"
 image:"/zrru.svg",
 technology:["Next.js","SSG","SSR","React.js","Typescript","Styled-components"],
 siteLink:"https://www.zr.ru"
-},
-{name: "Little lemon. Exam Coursera project",
-image:"/littlelemon.svg",
-technology:["React.js","Formik", "Jest","Figma"],
-code:"https://github.com/aermilina/little-lemon"}
+}
 ]
