@@ -1,7 +1,7 @@
 export const works=[{
     name: "Test dashboard for Kameleoon",
     image:"/kameleoon.svg",
-    technology:["React","React Hooks","Typescript","Scss","Vite","Vitetes"],
+    technology:["React","React Hooks","Typescript","Scss","Vite","Vitetest"],
     code:"https://github.com/aermilina/test_dashboard"
 },
     {
