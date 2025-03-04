@@ -1,4 +1,10 @@
 export const works=[{
+    name: "Test dashboard for Kameleoon",
+    image:"/kameleoon.svg",
+    technology:["React","React Hooks","Typescript","Scss","Vite","Vitetes"],
+    code:"https://github.com/aermilina/test_dashboard"
+},
+    {
     name:"Frontend Jobs TG Bot",
     image:"/frontjobs.svg",
     technology:["Python","Telegram Bot API","AI"],
@@ -40,7 +46,7 @@ code:"https://github.com/aermilina/example-react-amp"
 },
 {name: "ZR.RU",
 image:"/zrru.svg",
-technology:["Next.js","SSG","SSR","React.js","Typescript","Styled-components"],
+technology:["Next.js","SSG","SSR","Tanstack","React.js","Typescript","Styled-components","Storybook"],
 siteLink:"https://www.zr.ru"
 }
 ]
