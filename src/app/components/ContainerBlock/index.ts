@@ -1,1 +1,1 @@
-export {default} from "./ContainerBlock";
+export { default } from './ContainerBlock';
