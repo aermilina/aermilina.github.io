@@ -1,30 +1,27 @@
-'use client';
 import React from 'react';
 
 interface Props {
   name: string;
   href: string;
-  download?: boolean;
+  download?: boolean | string; // Может быть строкой для указания имени файла
+  className?: string;
+  target?: string;
 }
 
-export default function ButtonLink({ name, href, download }: Props) {
-  if (download) {
-    return (
-      <a
-        className="block p-3.5 border border-white max-w-52 text-center hover:text-slate-500 hover:border-slate-300 mt-3.5 cursor-pointer"
-        download
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer "
-      >
-        {name}
-      </a>
-    );
-  }
+export default function ButtonLink({ name, href, download, className, target }: Props) {
+  const baseStyles = className
+    ? className
+    : 'inline-block p-3.5 border border-white min-w-[150px] text-center transition-all hover:text-slate-400 hover:border-slate-400 mt-3.5 cursor-pointer';
+
+  const finalTarget = target ? target : href.startsWith('http') || download ? '_blank' : undefined;
+
   return (
     <a
-      className="block p-3.5 border border-white max-w-52 text-center hover:text-slate-500 hover:border-slate-300 mt-3.5 cursor-pointer"
       href={href}
+      className={baseStyles}
+      download={download}
+      target={finalTarget}
+      rel={finalTarget === '_blank' ? 'noopener noreferrer' : undefined}
     >
       {name}
     </a>
