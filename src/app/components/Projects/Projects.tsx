@@ -49,10 +49,19 @@ export default function Projects() {
                   </div>
 
                   <div className="p-8 md:p-14 order-2 lg:order-1 flex flex-col justify-center">
-                    <span className="text-[10px] md:text-xs font-mono text-purple-400 mb-4 block tracking-widest uppercase opacity-60">
-                      0{idx + 1} &mdash; Project
-                    </span>
-                    <h4 className="text-3xl md:text-5xl font-bold text-white mb-4 group-hover:text-purple-400 transition-colors">
+                    <div className="flex flex-col mb-4">
+                      <span className="text-[10px] md:text-xs font-mono text-purple-400 block tracking-widest uppercase opacity-60">
+                        0{idx + 1} &mdash; Project
+                      </span>
+                      {/* ДОБАВЛЕННАЯ РОЛЬ */}
+                      {work.role && (
+                        <span className="text-white text-xs md:text-sm font-bold mt-1 uppercase tracking-wider">
+                          {work.role}
+                        </span>
+                      )}
+                    </div>
+
+                    <h4 className="text-3xl md:text-5xl font-bold text-white mb-4 group-hover:text-purple-400 transition-colors tracking-tight">
                       {work.name}
                     </h4>
 
@@ -72,7 +81,6 @@ export default function Projects() {
                     </div>
 
                     <div className="flex flex-wrap gap-6 items-center mt-auto">
-                      {/* Умная проверка: показываем кнопку только если есть ссылка */}
                       {work.siteLink && (
                         <Link
                           href={work.siteLink}
