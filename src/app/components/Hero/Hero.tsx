@@ -63,7 +63,7 @@ export default function Hero() {
 
             <Image
               className="object-contain w-full h-full transition-transform duration-1000 group-hover:scale-[1.03] group-hover:-translate-y-1 pointer-events-none relative z-[15]"
-              src="/avatar.png"
+              src="/avatar.webp"
               alt="Anna Ermilina"
               fill
               priority
