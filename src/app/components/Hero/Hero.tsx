@@ -67,7 +67,7 @@ export default function Hero() {
               alt="Anna Ermilina"
               fill
               priority
-              sizes="(max-width: 1024px) 100vw, 50vw"
+              sizes="(max-width: 768px) 382px, 512px"
             />
 
             <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-[#030303] via-[#030303]/40 to-transparent z-[16] pointer-events-none" />
