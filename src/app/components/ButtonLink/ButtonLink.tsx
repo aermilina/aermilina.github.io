@@ -3,7 +3,7 @@ import React from 'react';
 interface Props {
   name: string;
   href: string;
-  download?: boolean | string; // Может быть строкой для указания имени файла
+  download?: boolean | string;
   className?: string;
   target?: string;
 }

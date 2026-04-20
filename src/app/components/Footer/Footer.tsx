@@ -1,58 +1,122 @@
+'use client';
 import React from 'react';
 import Link from 'next/link';
+import { FooterIcons } from '@/app/constants';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative border-t border-white/10 bg-[#030303] py-12">
-      <div className="absolute bottom-0 right-0 -z-10 h-32 w-32 bg-purple-600/10 blur-[100px]" />
+    <footer className="relative bg-[#030303] pt-24 pb-12 overflow-hidden border-t border-white/5">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
+      <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-purple-600/10 blur-[120px] rounded-full pointer-events-none transform-gpu" />
 
-      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-        <div className="text-center md:text-left">
-          <p className="text-slate-400 text-sm font-medium">
-            © {currentYear} <span className="text-white">Anna Ermilina</span>
-          </p>
-          <p className="text-slate-500 text-xs mt-1 tracking-wider">
-            Built with Next.js & Tailwind CSS
-          </p>
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 items-end">
+          <div className="text-center lg:text-left">
+            <h3 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-[0.9] mb-6">
+              Ready to build <br />
+              <span className="text-purple-500 italic font-serif">something High-End?</span>
+            </h3>
+            <p className="text-slate-400 text-sm md:text-base max-w-md mx-auto lg:mx-0 leading-relaxed font-medium">
+              I’m looking for ambitious challenges as a{' '}
+              <span className="text-white font-bold text-slate-200">Senior Frontend Engineer</span>{' '}
+              or B2B projects where speed, quality, and modern AI-driven workflows are required.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <Link
+              href="https://t.me/aermilina"
+              target="_blank"
+              className="group flex items-center justify-between p-6 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-500"
+            >
+              <div className="flex items-center gap-4 text-left">
+                <div className="w-10 h-10 rounded-full bg-sky-500/20 flex items-center justify-center text-sky-400">
+                  <FooterIcons.Send />
+                </div>
+                <div>
+                  <span className="block text-white font-black text-sm uppercase tracking-widest leading-none mb-1">
+                    Telegram
+                  </span>
+                  <span className="text-[10px] text-slate-500 uppercase font-bold tracking-tight italic">
+                    Fastest way to chat
+                  </span>
+                </div>
+              </div>
+              <div className="text-slate-600 group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300">
+                <FooterIcons.ArrowUpRight />
+              </div>
+            </Link>
+
+            <Link
+              href="mailto:anna.ermilina@gmail.com"
+              className="group flex items-center justify-between p-6 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-500"
+            >
+              <div className="flex items-center gap-4 text-left">
+                <div className="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400">
+                  <FooterIcons.Mail />
+                </div>
+                <div>
+                  <span className="block text-white font-black text-sm uppercase tracking-widest leading-none mb-1">
+                    Email
+                  </span>
+                  <span className="text-[10px] text-slate-500 uppercase font-bold tracking-tight italic">
+                    For official inquiries
+                  </span>
+                </div>
+              </div>
+              <div className="text-slate-600 group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300">
+                <FooterIcons.ArrowUpRight />
+              </div>
+            </Link>
+          </div>
         </div>
 
-        <div className="flex space-x-6">
-        <Link
-            href="https://www.linkedin.com/in/aermilina"
-            target="_blank"
-            className="text-slate-400 hover:text-blue-400 transition-all duration-300 hover:-translate-y-1"
-            aria-label="linkedin"
-          >
-            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-            </svg>
-          </Link>
+        <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+          <div className="flex flex-col gap-2">
+            <p className="text-[10px] md:text-xs uppercase tracking-[0.2em] font-black text-slate-500">
+              © {currentYear} Anna Ermilina.
+            </p>
+            <p className="text-[10px] uppercase tracking-[0.1em] text-white/30 font-bold">
+              Hand-coded with{' '}
+              <span className="text-purple-500/50 italic font-medium">
+                Next.js & AI Intelligence.
+              </span>
+            </p>
+          </div>
 
-          <Link
-  href="https://t.me/aermilina"
-  target="_blank"
-  className="text-slate-400 hover:text-sky-400 transition-all duration-300 hover:-translate-y-1"
-  aria-label="telegram"
->
-  <svg 
-    className="w-5 h-5 fill-current" 
-    viewBox="0 0 24 24" 
-  >
-    <path d="M11.944 0C5.346 0 0 5.348 0 11.944c0 6.596 5.346 11.944 11.944 11.944 6.598 0 11.944-5.348 11.944-11.944C23.888 5.348 18.542 0 11.944 0zm5.64 8.163l-1.92 9.043c-.143.639-.523.796-1.057.496l-2.92-2.152-1.408 1.355c-.156.156-.286.286-.587.286l.21-2.972 5.411-4.887c.235-.21-.051-.326-.366-.118L7.611 13.52l-2.883-.903c-.627-.196-.64-.627.13-.926l11.266-4.341c.521-.196.977.116.82.713z"/>
-  </svg>
-</Link>
+          <div className="flex items-center gap-6">
+            <Link
+              href="https://github.com/aermilina"
+              target="_blank"
+              className="text-slate-500 hover:text-white transition-all duration-300 hover:-translate-y-1"
+              aria-label="GitHub"
+            >
+              <FooterIcons.Github />
+            </Link>
 
-          <Link
-            href="mailto:anna.ermilina@gmail.com"
-            className="text-slate-400 hover:text-purple-400 transition-all duration-300 hover:-translate-y-1"
-            aria-label="email"
-          >
-            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-            </svg>
-          </Link>
+            <Link
+              href="https://www.linkedin.com/in/aermilina"
+              target="_blank"
+              className="text-slate-500 hover:text-blue-400 transition-all duration-300 hover:-translate-y-1"
+              aria-label="LinkedIn"
+            >
+              <FooterIcons.Linkedin />
+            </Link>
+
+            <div className="h-4 w-px bg-white/10 hidden md:block" />
+
+            <div className="flex items-center gap-2 select-none">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              </span>
+              <span className="text-[9px] font-black text-white uppercase tracking-widest opacity-80">
+                System Online
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
