@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://aermilina.github.io/og-image.png',
+        url: 'https://aermilina.github.io/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Anna Ermilina - Senior Frontend Engineer Portfolio',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: 'Anna Ermilina | Senior Frontend Expert',
     description:
       'Building scalable, high-performance React & Next.js applications with full ownership.',
-    images: ['https://aermilina.github.io/og-image.png'],
+    images: ['https://aermilina.github.io/og-image.jpg'],
   },
 
   alternates: {
