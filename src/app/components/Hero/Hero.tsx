@@ -77,6 +77,7 @@ export default function Hero() {
                 alt="Anna Ermilina"
                 fill
                 priority
+                fetchPriority="high"
                 sizes="(max-width: 768px) 100vw, 512px"
               />
             </div>
