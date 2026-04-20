@@ -7,34 +7,40 @@ const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
 });
-
 export const metadata: Metadata = {
-  title: 'Anna Ermilina | Senior Frontend Engineer | React & Next.js Expert',
+  title: 'Anna Ermilina | Senior Frontend Engineer | Lead Next.js & React Expert',
+
   description:
-    'Senior Frontend Engineer specializing in high-end React & Next.js applications. Leveraging AI to build robust, scalable architecture without the digital noise.',
+    'Senior Frontend Engineer with 6+ years of experience. Expert in Next.js, React, and TypeScript. Specializing in high-performance architectural migrations, autonomous product delivery, and AI-augmented development workflows.',
 
   openGraph: {
-    title: 'Anna Ermilina - Building the Future of Web',
+    title: 'Anna Ermilina | Lead Frontend Engineer | Next.js Specialist',
     description:
-      'Expert React & Next.js development. Turning complex requirements into clean, high-performance digital products.',
+      'Autonomous delivery of high-performance web applications. Expert in React ecosystem, architectural migrations, and scalable B2B solutions.',
     url: 'https://aermilina.github.io',
-    siteName: 'Anna Ermilina Portfolio',
+    siteName: 'Anna Ermilina | Senior Frontend Portfolio',
+    locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://aermilina.github.io/avatar.png',
+        url: 'https://aermilina.github.io/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Anna Ermilina - Senior Frontend Engineer',
+        alt: 'Anna Ermilina - Senior Frontend Engineer Portfolio',
       },
     ],
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Anna Ermilina | Frontend Expert',
-    description: 'High-performance React & Next.js applications.',
-    images: ['https://aermilina.github.io/avatar.png'],
+    title: 'Anna Ermilina | Senior Frontend Expert',
+    description:
+      'Building scalable, high-performance React & Next.js applications with full ownership.',
+    images: ['https://aermilina.github.io/og-image.png'],
+  },
+
+  alternates: {
+    canonical: 'https://aermilina.github.io',
   },
 
   robots: {
