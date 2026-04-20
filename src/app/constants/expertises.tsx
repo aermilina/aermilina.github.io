@@ -62,7 +62,7 @@ export const expertises = [
     description:
       'Accelerating delivery by 30% through advanced AI integration and prompt engineering.',
     icon: <ExpertiseIcons.Sparkles />,
-    tags: ['Cursor & Claude 3.5', 'Gemini 1.5 Pro', 'Prompt Engineering', 'Automation'],
+    tags: ['Cursor & Claude', 'Gemini', 'Prompt Engineering', 'Automation'],
     color: 'from-orange-500/10 via-transparent to-transparent',
     badge: {
       org: 'Google',

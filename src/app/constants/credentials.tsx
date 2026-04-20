@@ -8,7 +8,7 @@ export const credentials = [
     color: 'from-orange-500/10 to-transparent',
     borderColor: 'group-hover:border-orange-500/30',
     iconColor: 'text-orange-400',
-    link: '',
+    link: 'https://coursera.org/share/e119bd227e862f5187dfdd1602d40b00',
   },
   {
     org: 'Meta',
