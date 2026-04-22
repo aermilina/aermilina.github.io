@@ -94,6 +94,24 @@ export const works = [
     siteLink: 'https://testcase-cadex-2.vercel.app/',
   },
   {
+    name: 'AI SMM Assistant',
+    role: 'Solo Product Creator',
+    category: 'Labs',
+    description:
+      'Engineered an automated content-generation agent using Google Gemini Pro. Developed a full-cycle MVP for SMM automation, focusing on niche-specific prompt engineering and asynchronous Telegram bot architecture to slash content creation time by 90%.',
+    image: '/smmbot.webp',
+    technology: [
+      'Python',
+      'Google Gemini API',
+      'Aiogram',
+      'Railway Cloud',
+      'Security & Cost Control',
+      'Prompt Engineering',
+      'AI-Augmented Development',
+    ],
+    code: 'https://github.com/aermilina/smm-bot',
+  },
+  {
     name: 'Frontend Jobs Bot',
     role: 'Solo Product Creator',
     category: 'Labs',
