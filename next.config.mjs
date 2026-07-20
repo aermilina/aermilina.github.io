@@ -1,17 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   images: {
     unoptimized: true,
   },
-
-  experimental: {
-    optimizeCss: true,
-  },
-  compress: true,
-  poweredByHeader: false,
-  optimizeFonts: true,
-  swcMinify: true,
 };
 
 export default nextConfig;

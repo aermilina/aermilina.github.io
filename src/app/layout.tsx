@@ -1,58 +1,61 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import { Inter, Geist_Mono } from 'next/font/google';
+import { JsonLd } from '@/src/app/components/schema';
+import './globals.css';
 
-const inter = Inter({
+const inter = Inter({ variable: '--font-geist-sans', subsets: ['latin'] });
+const geistMono = Geist_Mono({
+  variable: '--font-geist-mono',
   subsets: ['latin'],
-  display: 'swap',
 });
+
+const SITE_URL = 'https://aermilina.github.io';
+
 export const metadata: Metadata = {
-  title: 'Anna Ermilina | Senior Frontend Engineer | Lead Next.js & React Expert',
-
+  metadataBase: new URL(SITE_URL),
+  title: 'Anna Ermilina — Senior Frontend Engineer · React & Next.js',
   description:
-    'Senior Frontend Engineer with 6+ years of experience. Expert in Next.js, React, and TypeScript. Specializing in high-performance architectural migrations, autonomous product delivery, and AI-augmented development workflows.',
-
+    'Senior Frontend Engineer with 7+ years in the React ecosystem. Next.js architecture, large-scale platform migrations, Core Web Vitals optimization, LLM-powered features.',
   openGraph: {
-    title: 'Anna Ermilina | Lead Frontend Engineer | Next.js Specialist',
-    description:
-      'Autonomous delivery of high-performance web applications. Expert in React ecosystem, architectural migrations, and scalable B2B solutions.',
-    url: 'https://aermilina.github.io',
-    siteName: 'Anna Ermilina | Senior Frontend Portfolio',
-    locale: 'en_US',
     type: 'website',
+    url: SITE_URL,
+    title: 'Anna Ermilina — Senior Frontend Engineer · React & Next.js',
+    description:
+      'Next.js architecture, platform migrations, Core Web Vitals, LLM-powered features. Open to senior frontend roles, remote.',
+    siteName: 'Anna Ermilina',
     images: [
       {
-        url: 'https://aermilina.github.io/og-image.jpg',
+        url: '/og-image.png', // 1200x630, положить в /public
         width: 1200,
         height: 630,
-        alt: 'Anna Ermilina - Senior Frontend Engineer Portfolio',
+        alt: 'Anna Ermilina — Senior Frontend Engineer',
       },
     ],
   },
-
   twitter: {
     card: 'summary_large_image',
-    title: 'Anna Ermilina | Senior Frontend Expert',
+    title: 'Anna Ermilina — Senior Frontend Engineer · React & Next.js',
     description:
-      'Building scalable, high-performance React & Next.js applications with full ownership.',
-    images: ['https://aermilina.github.io/og-image.jpg'],
+      'Next.js architecture, platform migrations, Core Web Vitals, LLM-powered features.',
+    images: ['/og-image.png'],
   },
-
-  alternates: {
-    canonical: 'https://aermilina.github.io',
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
+  icons: {
+    icon: [
+      {
+        url: '/icon-light-32x32.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/icon-dark-32x32.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/icon.svg',
+        type: 'image/svg+xml',
+      },
+    ],
+    apple: '/apple-icon.png',
   },
 };
 
@@ -62,10 +65,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-[#030303] text-white antialiased`}>
+    <html lang="en" className={`${inter.variable} ${geistMono.variable} bg-[#FBFBFB]`}>
+      <body className="font-sans antialiased">
+        <JsonLd />
         {children}
-        <GoogleAnalytics gaId="G-N09K7RP38L" />
+        {process.env.NODE_ENV === 'production' && process.env.NEXT_PUBLIC_GA_ID && (
+          <GoogleAnalytics gaId="G-N09K7RP38L" />
+        )}
       </body>
     </html>
   );

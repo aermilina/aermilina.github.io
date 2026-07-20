@@ -1,0 +1,33 @@
+# Anna Ermilina — Senior Frontend Engineer
+
+> Senior Frontend Engineer with 7+ years in the React ecosystem. Next.js architecture, large-scale platform migrations, Core Web Vitals optimization, LLM-powered features. Based in Belgrade, Serbia. Open to senior frontend roles, remote.
+
+## About
+
+- 7+ years in JavaScript/TypeScript: React, Next.js (App/Pages Router), TypeScript, Redux Toolkit, TanStack Query
+- Performance: Core Web Vitals optimization, SSR/SSG strategies, schema.org structured data (JSON-LD)
+- AI: LLM API integration (Gemini, Claude), AI-assisted development workflows (Cursor, Claude)
+- Languages: Russian (native), English (B2)
+
+## Experience
+
+- Senior Frontend Developer, OOO "Za Rulem" (ZR.RU), 2019–present. Sole frontend engineer; led migration from legacy stacks to Next.js; built a 76+ component library; achieved Lighthouse Performance 95/100 with zero CLS and 2.4s LCP on throttled slow 4G; Keycloak auth customization; JSON-LD structured data.
+- Frontend Developer (contract), OOO KP-IT, 2024–present. Internal statistics dashboard, touch-optimized kiosk library, SSR coupon hub for a marketing campaign.
+
+## Education
+
+- Engineer, Moscow Aviation Institute (MAI), 2005–2011
+- Linguist-Translator, MAI Institute of Foreign Languages, 2008–2011
+- Google AI Essentials Certificate; Meta Front-End Professional Certificate
+
+## Links
+
+- [Portfolio](https://aermilina.github.io): case studies with live demos and code
+- [GitHub](https://github.com/aermilina): open repositories, technical assignments treated as production code
+- [LinkedIn](https://www.linkedin.com/in/aermilina): full profile
+- [Resume PDF](https://aermilina.github.io/Anna_Ermilina_Resume.pdf): downloadable CV
+
+## Contact
+
+- Email: anna.ermilina@gmail.com
+- Telegram: @aermilina
