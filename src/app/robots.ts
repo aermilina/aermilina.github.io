@@ -1,6 +1,8 @@
-import type { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next'
 
-const SITE_URL = 'https://aermilina.github.io';
+export const dynamic = 'force-static'
+
+const SITE_URL = 'https://aermilina.github.io'
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -11,5 +13,5 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
-  };
+  }
 }

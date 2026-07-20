@@ -1,6 +1,8 @@
-import type { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next'
 
-const SITE_URL = 'https://aermilina.github.io';
+export const dynamic = 'force-static'
+
+const SITE_URL = 'https://aermilina.github.io'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -10,5 +12,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 1,
     },
-  ];
+  ]
 }
