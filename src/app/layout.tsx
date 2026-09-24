@@ -69,9 +69,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <JsonLd />
         {children}
-        {process.env.NODE_ENV === 'production' && process.env.NEXT_PUBLIC_GA_ID && (
           <GoogleAnalytics gaId="G-N09K7RP38L" />
-        )}
       </body>
     </html>
   );
