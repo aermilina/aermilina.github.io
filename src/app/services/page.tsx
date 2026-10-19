@@ -12,7 +12,7 @@ const LANGUAGES = { RU: 'Russian', EN: 'English', SR: 'Serbian' } as const;
 
 type Rate = { label: string; price: string };
 
-const services: { name: string; unit?: string; rates: Rate[] }[] = [
+const services: { name: string; unit?: string; note?: string; rates: Rate[] }[] = [
   {
     name: 'HR screening',
     unit: '30 / 60 min',
@@ -60,6 +60,19 @@ const services: { name: string; unit?: string; rates: Rate[] }[] = [
       { label: 'RU', price: '€5' },
       { label: 'EN', price: '€10' },
       { label: 'SR', price: '€15' },
+    ],
+  },
+  {
+    name: 'Culture fit interview',
+    note: 'I\'ll listen enthusiastically to your “unique values”.',
+    rates: [{ label: 'Per interview', price: '€1,200' }],
+  },
+  {
+    name: 'Essay: Why I want to work at [Company name]',
+    rates: [
+      { label: 'RU', price: '€100' },
+      { label: 'EN', price: '€150' },
+      { label: 'SR', price: '€200' },
     ],
   },
 ];
@@ -141,6 +154,11 @@ export default function ServicesPage() {
                   {service.unit && (
                     <p className="mt-2 font-mono text-xs tracking-widest text-black/60">
                       [ {service.unit.toUpperCase()} ]
+                    </p>
+                  )}
+                  {service.note && (
+                    <p className="mt-2 text-pretty text-sm leading-relaxed text-black/60">
+                      {service.note}
                     </p>
                   )}
                 </div>
