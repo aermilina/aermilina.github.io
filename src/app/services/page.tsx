@@ -107,7 +107,7 @@ export default function ServicesPage() {
             Services &amp; pricing
           </h1>
           <p className="mt-8 max-w-2xl text-pretty text-lg leading-relaxed text-black/70">
-            Some hiring stages also require a qualified specialist. Their time is billed accordingly.
+            My rates for taking part in your interview. Same rates if you&apos;d rather I run it as your HR.
           </p>
         </div>
       </section>
@@ -159,6 +159,18 @@ export default function ServicesPage() {
             <p>[ PAYMENT: RUB · USD · EUR · RSD ]</p>
             <p>[ DISCOUNT IN EFFECT · FOR NOW ]</p>
           </div>
+          <p className="mt-2 font-mono text-xs leading-relaxed tracking-widest text-black/60">
+            [ BONUS: YOUR VACANCY POSTED IN MY TELEGRAM CHANNEL{' '}
+            <a
+              href="https://t.me/frontend_remote"
+              target="_blank"
+              rel="noreferrer"
+              className={`text-[#6366F1] transition-opacity hover:opacity-50 ${focusRing}`}
+            >
+              @FRONTEND_REMOTE
+            </a>{' '}
+            ]
+          </p>
 
           <p className="mt-16 max-w-2xl border-l-2 border-black/10 pl-4 text-pretty text-sm leading-relaxed text-black/60">
             Disclaimer: this is a satirical price list. If you didn&apos;t read this far, the attentive
