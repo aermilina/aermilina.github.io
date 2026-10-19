@@ -4,6 +4,7 @@ import { Expertise } from './components/expertise';
 import { CaseStudies } from './components/case-studies';
 import { Contact } from './components/contact';
 import { Experience } from './components/experience';
+import { SiteFooter } from './components/site-footer';
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
       <Experience />
       <CaseStudies />
       <Contact />
+      <SiteFooter />
     </main>
   );
 }

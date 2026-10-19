@@ -1,12 +1,19 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export function Hero() {
   return (
     <section className="border-b border-black/10">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <p className="mb-8 font-mono text-xs tracking-widest text-black/60">
-          [ PORTFOLIO // 2026 ]
-        </p>
+        <div className="mb-8 flex items-baseline justify-between gap-4 font-mono text-xs tracking-widest text-black/60">
+          <p>[ PORTFOLIO // 2026 ]</p>
+          <Link
+            href="/services"
+            className="text-[#6366F1] transition-opacity hover:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366F1]"
+          >
+            <span aria-hidden="true">✦</span> [ SERVICES ]
+          </Link>
+        </div>
         <h1 className="max-w-4xl text-balance text-3xl font-bold leading-[1.05] tracking-tight text-[#111111] sm:text-6xl md:text-7xl">
           [ SENIOR FRONTEND ENGINEER // REACT & NEXT.JS ]
         </h1>

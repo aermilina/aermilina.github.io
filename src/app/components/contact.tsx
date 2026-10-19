@@ -26,7 +26,7 @@ const routes = [
   {
     label: 'Resume',
     handle: 'PDF · updated 2026',
-    href: '/Anna_Ermilina_Resume.docx',
+    href: '/Anna_Ermilina_Resume.pdf',
     download: true,
   },
 ];
