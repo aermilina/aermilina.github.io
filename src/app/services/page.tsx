@@ -54,6 +54,14 @@ const services: { name: string; unit?: string; rates: Rate[] }[] = [
       { label: 'SR', price: '€20 / €40' },
     ],
   },
+  {
+    name: 'Hearing out my vibe-coding ideas',
+    rates: [
+      { label: 'RU', price: '€5' },
+      { label: 'EN', price: '€10' },
+      { label: 'SR', price: '€15' },
+    ],
+  },
 ];
 
 const focusRing =
