@@ -75,6 +75,14 @@ const services: { name: string; unit?: string; note?: string; rates: Rate[] }[] 
       { label: 'SR', price: '€200' },
     ],
   },
+  {
+    name: 'Talking to your AI recruiter',
+    rates: [
+      { label: 'RU', price: '€20' },
+      { label: 'EN', price: '€40' },
+      { label: 'SR', price: '€60' },
+    ],
+  },
 ];
 
 const focusRing =
