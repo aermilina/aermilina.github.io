@@ -83,6 +83,18 @@ const services: { name: string; unit?: string; note?: string; rates: Rate[] }[] 
       { label: 'SR', price: '€60' },
     ],
   },
+  {
+    name: 'Staying in your talent pool',
+    rates: [
+      { label: 'Per month', price: '€100' },
+      { label: 'Pool renewal', price: '€200' },
+    ],
+  },
+  {
+    name: 'Ghosting after the final round',
+    note: 'Therapy compensation included.',
+    rates: [{ label: 'Flat fee', price: '€500' }],
+  },
 ];
 
 const focusRing =
